@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wedding of Arka & Nadia — Undangan Maroon</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo1.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* GANTI BACKGROUND — timpa semua background lama */
+body,
+.cover,
+.envelope,
+.home,
+.section-cover {
+    background: url('assets/b4.png') center/cover no-repeat !important;
+}
+</style>
+</head>
+<body class="locked">
+
+  <div class="petals" id="petals"></div>
+  <button class="music-btn" id="musicBtn" title="Musik">🎵</button>
+
+  <!-- ============ COVER: AMPLOP 3D ============ -->
+  <div class="cover" id="cover">
+    <div class="cover-frame">
+      <p class="label">Undangan Pernikahan</p>
+      <div class="envelope">
+        <div class="env-back"></div>
+        <div class="env-card">
+          <p class="env-pre">The Wedding Of</p>
+          <p class="script env-names">Arka &amp; Nadia</p>
+          <p class="env-date">12 • 09 • 2026</p>
+        </div>
+        <div class="env-flap"><span class="seal">A•N</span></div>
+        <div class="env-front"></div>
+      </div>
+      <div class="cover-to">
+        <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+        <p class="guest-name" id="guestName">Tamu Undangan</p>
+      </div>
+      <button class="btn-gold" id="openBtn">💌&nbsp; Buka Undangan</button>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <p class="label reveal">The Wedding Of</p>
+    <div class="photo3d reveal" data-tilt>
+      <img src="assets/fto1.png" alt="Arka & Nadia">
+    </div>
+    <h1 class="script hero-names reveal">Arka &amp; Nadia</h1>
+    <p class="hero-date reveal">Sabtu, 12 September 2026</p>
+    <div class="ornament reveal">✦ ❦ ✦</div>
+    <div class="countdown reveal">
+      <div><b id="cd-d">0</b><span>Hari</span></div>
+      <div><b id="cd-h">0</b><span>Jam</span></div>
+      <div><b id="cd-m">0</b><span>Menit</span></div>
+      <div><b id="cd-s">0</b><span>Detik</span></div>
+    </div>
+    <a href="#quote" class="scroll-hint">⌄</a>
+  </header>
+
+  <!-- ============ QUOTE ============ -->
+  <section class="section" id="quote">
+    <p class="label reveal">Quote</p>
+    <div class="quote-mark reveal">“</div>
+    <p class="quote-text reveal">Dan segala sesuatu Kami ciptakan berpasang-pasangan,
+      agar kamu mengingat kebesaran Allah.</p>
+    <p class="quote-sign reveal">— QS. Az-Zariyat : 49 —</p>
+  </section>
+
+  <!-- ============ MEMPELAI ============ -->
+  <section class="section" id="mempelai">
+    <p class="label reveal">Mempelai</p>
+    <h2 class="script title reveal">Dua Hati, Satu Cinta</h2>
+    <p class="sub reveal">Dengan memohon rahmat dan ridha Tuhan Yang Maha Esa,
+      kami mengundang Bapak/Ibu/Saudara/i hadir di acara pernikahan kami:</p>
+    <div class="couple-grid">
+      <div class="card couple-card reveal" data-tilt>
+        <div class="mono-arch"><span>A</span></div>
+        <h3 class="script">Arka Pratama</h3>
+        <p>Putra pertama dari<br>Bapak H. Surya Pratama &amp; Ibu Hj. Amalia</p>
+        <a class="ig" href="#" target="_blank">@arkapratama</a>
+      </div>
+      <span class="amp reveal">&amp;</span>
+      <div class="card couple-card reveal" data-tilt>
+        <div class="mono-arch"><span>N</span></div>
+        <h3 class="script">Nadia Salsabila</h3>
+        <p>Putri kedua dari<br>Bapak H. Ridwan Salsabila &amp; Ibu Hj. Fatimah</p>
+        <a class="ig" href="#" target="_blank">@nadiasalsabila</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACARA ============ -->
+  <section class="section" id="acara">
+    <p class="label reveal">Rangkaian Acara</p>
+    <h2 class="script title reveal">Save The Date</h2>
+    <div class="event-card reveal" data-tilt>
+      <div class="event-icon">💍</div>
+      <h3>Akad Nikah</h3>
+      <p class="event-date">Sabtu, 12 September 2026</p>
+      <p class="event-time">Pukul 08.00 WIB – selesai</p>
+      <p class="event-place">Gedung Serbaguna Melati<br>Jl. Mawar No. 12, Jakarta Selatan</p>
+      <a class="btn-ghost" href="https://maps.google.com/?q=Jakarta+Selatan" target="_blank">📍 Lihat Lokasi</a>
+    </div>
+    <div class="event-card reveal" data-tilt>
+      <div class="event-icon">🥂</div>
+      <h3>Resepsi</h3>
+      <p class="event-date">Sabtu, 12 September 2026</p>
+      <p class="event-time">Pukul 11.00 – 15.00 WIB</p>
+      <p class="event-place">Gedung Serbaguna Melati<br>Jl. Mawar No. 12, Jakarta Selatan</p>
+      <a class="btn-ghost" href="https://maps.google.com/?q=Jakarta+Selatan" target="_blank">📍 Lihat Lokasi</a>
+    </div>
+  </section>
+
+  <!-- ============ CERITA ============ -->
+  <section class="section" id="cerita">
+    <p class="label reveal">Love Story</p>
+    <h2 class="script title reveal">Perjalanan Cinta</h2>
+    <div class="timeline">
+      <div class="t-item reveal"><span class="t-year">2021</span>
+        <h4>Pertama Bertemu</h4><p>Obrolan singkat di sebuah kedai kopi yang tak pernah benar-benar selesai.</p></div>
+      <div class="t-item reveal"><span class="t-year">2025</span>
+        <h4>Lamaran</h4><p>Dikelilingi orang tercinta, Arka melamar Nadia dengan cincin dan doa.</p></div>
+      <div class="t-item reveal"><span class="t-year">2026</span>
+        <h4>Menikah</h4><p>Kami memulai babak baru — semoga menjadi keluarga yang sakinah, mawaddah, warahmah.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ GALERI 3D BERPUTAR ============ -->
+  <section class="section" id="galeri">
+    <p class="label reveal">Gallery</p>
+    <h2 class="script title reveal">Momen Kami</h2>
+    <div class="ring-wrap reveal">
+      <div class="ring">
+        <figure style="--i:0"><img src="assets/fto2.jpg" alt=""></figure>
+        <figure style="--i:1"><img src="assets/fto3.jpg" alt=""></figure>
+        <figure style="--i:2"><img src="assets/fto4.jpg" alt=""></figure>
+        <figure style="--i:3"><img src="assets/fto5.jpg" alt=""></figure>
+        <figure style="--i:4"><img src="assets/fto6.jpg" alt=""></figure>
+        <figure style="--i:5"><img src="assets/fto7.jpg" alt=""></figure>
+      </div>
+    </div>
+    <p class="sub reveal">Galeri berputar 3D — arahkan kursor untuk menjeda.</p>
+  </section>
+
+  <!-- ============ KADO ============ -->
+  <section class="section" id="kado">
+    <p class="label reveal">Wedding Gift</p>
+    <h2 class="script title reveal">Kado Pernikahan</h2>
+    <p class="sub reveal">Doa restu Anda adalah hadiah terindah. Namun apabila berkenan berbagi kebahagiaan:</p>
+    <div class="event-card gift-card reveal" data-tilt>
+      <p class="gift-bank">BCA</p><p class="gift-num">1234 5678 90</p>
+      <p class="gift-name">a.n. Arka Pratama</p>
+      <button class="btn-ghost copy" data-copy="1234567890">Salin Nomor</button>
+    </div>
+    <div class="event-card gift-card reveal" data-tilt>
+      <p class="gift-bank">DANA</p><p class="gift-num">0812 3456 7890</p>
+      <p class="gift-name">a.n. Nadia Salsabila</p>
+      <button class="btn-ghost copy" data-copy="081234567890">Salin Nomor</button>
+    </div>
+  </section>
+
+  <!-- ============ UCAPAN & DOA ============ -->
+  <section class="section" id="ucapan">
+    <p class="label reveal">RSVP</p>
+    <h2 class="script title reveal">Ucapan &amp; Doa</h2>
+    <form class="wish-form reveal" id="wishForm">
+      <input id="w-name" placeholder="Nama Anda" maxlength="40" required>
+      <select id="w-attend">
+        <option value="Hadir">✅ Hadir</option>
+        <option value="Tidak Hadir">❌ Berhalangan</option>
+      </select>
+      <textarea id="w-msg" rows="3" placeholder="Tuliskan ucapan & doa…" maxlength="300" required></textarea>
+      <button class="btn-gold" type="submit">Kirim Doa 🌹</button>
+    </form>
+    <div class="wish-list" id="wishList"></div>
+  </section>
+
+  <footer>
+    <div class="ornament">✦ ❦ ✦</div>
+    <p class="script foot-names">Arka &amp; Nadia</p>
+    <p>terima kasih atas doa restu Anda 🤍</p>
+     <p class="credit">
+
+
+    <a href="Percetakan Rahmat Wijaya" target="_blank">Percetakan Rahmat Wijaya</a> 🌹
+  </p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <!-- GANTI src dengan lagu pilihanmu -->
+  <audio id="bgm" loop preload="auto"
+    src="assets/audio1.mp3"></audio>
+  <script src="script.js"></script>
+  <!-- filter penajam foto -->
+<svg width="0" height="0" style="position:absolute">
+  <filter id="sharpen">
+    <feConvolveMatrix order="3" preserveAlpha="true"
+      kernelMatrix="0 -0.5 0 -0.5 3 -0.5 0 -0.5 0"/>
+  </filter>
+</svg>
+</body>
+</html>
