@@ -13,7 +13,6 @@
 <div class="petals" id="petals"></div>
 <button class="music-btn" id="musicBtn" title="Musik">🎵</button>
 
-<!-- ===== COVER AMPLOP 3D ===== -->
 <div class="cover" id="cover">
   <div class="cover-frame">
     <p class="label">Undangan Pernikahan</p>
@@ -35,10 +34,9 @@
   </div>
 </div>
 
-<!-- ===== HERO ===== -->
 <header class="hero" id="home">
   <p class="label reveal">The Wedding Of</p>
-  <div class="photo3d reveal"><img src="assets/fto1.png" alt="Arka & Nadia"></div>
+  <div class="photo3d reveal"><img src="fto1.png" onerror="this.onerror=null;this.src='assets/fto1.png'" alt="Arka & Nadia"></div>
   <h1 class="script hero-names reveal">Arka &amp; Nadia</h1>
   <p class="hero-date reveal">Sabtu, 12 September 2026</p>
   <div class="ornament reveal">✦  ✦</div>
@@ -51,7 +49,6 @@
   <a href="#quote" class="scroll-hint">⌄</a>
 </header>
 
-<!-- ===== QUOTE ===== -->
 <section class="section" id="quote">
   <p class="label reveal">Quote</p>
   <div class="quote-mark reveal">"</div>
@@ -59,7 +56,6 @@
   <p class="quote-sign reveal">— QS. Az-Zariyat : 49 —</p>
 </section>
 
-<!-- ===== MEMPELAI ===== -->
 <section class="section" id="mempelai">
   <p class="label reveal">Mempelai</p>
   <h2 class="script title reveal">Dua Hati, Satu Cinta</h2>
@@ -81,7 +77,6 @@
   </div>
 </section>
 
-<!-- ===== ACARA ===== -->
 <section class="section" id="acara">
   <p class="label reveal">Rangkaian Acara</p>
   <h2 class="script title reveal">Save The Date</h2>
@@ -101,7 +96,6 @@
   </div>
 </section>
 
-<!-- ===== CERITA ===== -->
 <section class="section" id="cerita">
   <p class="label reveal">Love Story</p>
   <h2 class="script title reveal">Perjalanan Cinta</h2>
@@ -112,24 +106,22 @@
   </div>
 </section>
 
-<!-- ===== GALERI 3D MUTER ===== -->
 <section class="section" id="galeri">
   <p class="label reveal">Gallery</p>
   <h2 class="script title reveal">Momen Kami</h2>
   <div class="ring-wrap reveal">
     <div class="ring">
-      <figure style="--i:0"><img src="assets/fto2.jpg" alt=""></figure>
-      <figure style="--i:1"><img src="assets/fto3.jpg" alt=""></figure>
-      <figure style="--i:2"><img src="assets/fto4.jpg" alt=""></figure>
-      <figure style="--i:3"><img src="assets/fto5.jpg" alt=""></figure>
-      <figure style="--i:4"><img src="assets/fto6.jpg" alt=""></figure>
-      <figure style="--i:5"><img src="assets/fto7.jpg" alt=""></figure>
+      <figure style="--i:0"><img src="fto2.jpg" onerror="this.onerror=null;this.src='assets/fto2.jpg'" alt=""></figure>
+      <figure style="--i:1"><img src="fto3.jpg" onerror="this.onerror=null;this.src='assets/fto3.jpg'" alt=""></figure>
+      <figure style="--i:2"><img src="fto4.jpg" onerror="this.onerror=null;this.src='assets/fto4.jpg'" alt=""></figure>
+      <figure style="--i:3"><img src="fto5.jpg" onerror="this.onerror=null;this.src='assets/fto5.jpg'" alt=""></figure>
+      <figure style="--i:4"><img src="fto6.jpg" onerror="this.onerror=null;this.src='assets/fto6.jpg'" alt=""></figure>
+      <figure style="--i:5"><img src="fto7.jpg" onerror="this.onerror=null;this.src='assets/fto7.jpg'" alt=""></figure>
     </div>
   </div>
   <p class="sub reveal">Galeri berputar 3D — arahkan kursor untuk menjeda.</p>
 </section>
 
-<!-- ===== KADO ===== -->
 <section class="section" id="kado">
   <p class="label reveal">Wedding Gift</p>
   <h2 class="script title reveal">Kado Pernikahan</h2>
@@ -146,7 +138,6 @@
   </div>
 </section>
 
-<!-- ===== UCAPAN ===== -->
 <section class="section" id="ucapan">
   <p class="label reveal">RSVP</p>
   <h2 class="script title reveal">Ucapan &amp; Doa</h2>
@@ -163,14 +154,17 @@
 </section>
 
 <footer>
-  <div class="ornament">✦ ❦ ✦</div>
+  <div class="ornament">✦  ✦</div>
   <p class="script foot-names">Arka &amp; Nadia</p>
   <p>terima kasih atas doa restu Anda 🤍</p>
   <p class="credit"><a href="https://percetakanrahmatwijaya.com" target="_blank">Percetakan Rahmat Wijaya</a> 🌹</p>
 </footer>
 
 <div class="toast" id="toast"></div>
-<audio id="bgm" loop preload="auto" src="assets/audio1.mp3"></audio>
+<audio id="bgm" loop preload="auto">
+  <source src="audio1.mp3" type="audio/mpeg">
+  <source src="assets/audio1.mp3" type="audio/mpeg">
+</audio>
 <script src="script.js"></script>
 </body>
 </html>
